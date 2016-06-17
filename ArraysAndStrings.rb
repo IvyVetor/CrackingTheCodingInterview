@@ -50,3 +50,18 @@ end
 def permutation?(str1, str2)
 	str1.split('').sort == str2.split('').sort
 end
+
+
+# 1.4 Write a method to replace all spaces in a string with '%20'. You may assume that the string has sufficient space
+#at the end of the string to hold additional characters, and that you are given the "true" length of the string.
+#Test case: ("Mr John Smith     ", 13) = ("Mr%20John%20Smith")
+
+def insertChar(str, length)
+  if str.is_a?(String) && length.is_a?(Integer)
+    str = str[0...length]
+    new_str = str.split(' ').join('%20')
+    return new_str
+  else
+    "input a string and integer"
+  end
+end
