@@ -27,19 +27,17 @@ end
 
 def reverse(string)
   if string == String #check edge case to make sure input is a string
-  	arr = string.split('')
-  	counter = 1
-  	new_str = []
+    arr = string.split('')
+    counter = 1
+    new_str = []
   
-  	while counter <= arr.length do
-    	new_str << arr[-counter]
-    	counter += 1
-  	end
-  
-  	return new_str.join('')
-  	
+    while counter <= arr.length do
+      new_str << arr[-counter]
+      counter += 1
+    end
+    return new_str.join('')
   else
-  	return "not a string"
+    return "not a string"
   end
 end
 
@@ -48,7 +46,7 @@ end
 #Test cases: ("star", "rats") = true, ("lemon", "melon") = true, ("mega", "lol") = false
 
 def permutation?(str1, str2)
-	str1.split('').sort == str2.split('').sort
+  str1.split('').sort == str2.split('').sort
 end
 
 
