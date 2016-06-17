@@ -42,3 +42,11 @@ def reverse(string)
   	return "not a string"
   end
 end
+
+
+# 1.3 Given two strings, write a method to decide if one is a permutation of the other.
+#Test cases: ("star", "rats") = true, ("lemon", "melon") = true, ("mega", "lol") = false
+
+def permutation?(str1, str2)
+	str1.split('').sort == str2.split('').sort
+end
